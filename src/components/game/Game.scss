@@ -1,0 +1,40 @@
+@import '../../styles/commons';
+@import '../../styles/variables';
+
+.game {
+    @extend .absolute-center;
+    .title {
+        position: absolute;
+        top: calc(100% + 150px);
+        left: 50%;
+        transform: translateX(-50%);
+        color: $theme-board;
+        font-family: $title;
+        font-size: 4rem;
+    }
+    .winner {
+        position: absolute;
+        top: calc(100% );
+        left: 50%;
+        transform: translateX(-50%);
+        color: $theme-board;
+        font-family: $title;
+        font-size: 2rem;
+    }
+    .reset-btn{
+       position: absolute;
+        top: calc(100% - 15px);
+        background: none;
+        padding: 0.7rem;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 1px solid $theme-board;
+        color: $theme-board;
+        font-family: $title;
+        font-size: 2rem; 
+        cursor: pointer;
+        &:hover {
+            background: linear-gradient(45deg, $theme-x 20%, $theme-o);
+        }
+    }
+}

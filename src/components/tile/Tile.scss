@@ -1,0 +1,15 @@
+@import '../../styles/variables';
+.tile {
+    height: calc(50vw / 3);
+    background-color: transparent;
+    color: $theme-board;
+    border: none;
+    border-right: 10px solid $theme-board;
+    border-bottom: 10px solid $theme-board;
+    &:nth-child(3n){
+        border-right: none;
+    }
+    &:nth-last-child(-n+3){
+        border-bottom: none;
+    }
+}
