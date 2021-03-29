@@ -6,8 +6,8 @@
     .title {
         position: absolute;
         top: calc(100% + 150px);
-        left: 50%;
-        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
         color: $theme-board;
         font-family: $title;
         font-size: 4rem;
@@ -15,8 +15,8 @@
     .winner {
         position: absolute;
         top: calc(100% );
-        left: 50%;
-        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
         color: $theme-board;
         font-family: $title;
         font-size: 2rem;
@@ -38,3 +38,4 @@
         }
     }
 }
+

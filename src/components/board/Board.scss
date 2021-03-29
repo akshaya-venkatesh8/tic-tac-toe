@@ -1,8 +1,13 @@
 @import '../../styles/commons';
+@import '../../styles/variables';
 
 .grid {
   display: grid;
   grid-gap: 0px;
-  width: 50vw;
+  width: $l;
   grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .grid { width: $s; }
 }

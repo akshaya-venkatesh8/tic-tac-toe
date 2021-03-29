@@ -9,3 +9,7 @@
     transform: translateX(-50%);
     // background-color: $theme-o;
 }
+
+@media (max-width: 900px) {
+  .O { border-width: 6px;}
+}

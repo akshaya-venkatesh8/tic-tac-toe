@@ -1,6 +1,6 @@
 @import '../../styles/variables';
 .tile {
-    height: calc(50vw / 3);
+    height: calc(#{$l} / 3);
     background-color: transparent;
     color: $theme-board;
     border: none;
@@ -12,4 +12,8 @@
     &:nth-last-child(-n+3){
         border-bottom: none;
     }
+}
+
+@media (max-width: 900px) {
+  .tile { height: calc(#{$s} / 3);}
 }

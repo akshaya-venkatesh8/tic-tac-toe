@@ -40,7 +40,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-
+build/
 # TypeScript v1 declaration files
 typings/
 
@@ -102,3 +102,14 @@ dist
 
 # TernJS port file
 .tern-port
+build/static/js/2.7f46f160.chunk.js
+build/static/js/2.7f46f160.chunk.js.LICENSE.txt
+build/static/js/2.7f46f160.chunk.js.map
+build/static/js/2.9d2bad77.chunk.js
+build/static/js/2.9d2bad77.chunk.js.LICENSE.txt
+build/static/js/2.9d2bad77.chunk.js.map
+build/static/js/main.9a4a01d2.chunk.js
+build/static/js/main.9a4a01d2.chunk.js.map
+build/static/js/main.b72e4c7d.chunk.js
+build/static/js/main.b72e4c7d.chunk.js.map
+build/asset-manifest.json
