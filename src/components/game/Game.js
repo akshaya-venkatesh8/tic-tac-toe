@@ -6,14 +6,15 @@ import findWinner from '../../services/findWinner';
 const Game = () => {
     const [board, setBoard] = useState(Array(9).fill(null));
     const [xIsNext, setXisNext] = useState(true);
+    const [draw, setDraw] = useState(false);
     const winner = findWinner(board);
-
+    
     const handleClick = (i) => {
         const boardCopy = [...board]
         if (winner || boardCopy[i]) return; 
-
         boardCopy[i] = xIsNext ? 'x' : 'o';
         setBoard(boardCopy);
+        if (boardCopy.every(item => item != null)) { setDraw(true); }
         setXisNext(!xIsNext)
     }
     const reset = () => {
@@ -33,7 +34,7 @@ const Game = () => {
         <Board tiles={board} onClick={handleClick}/>
 
         <div className="winner">
-            <p>{winner ? 'Winner: ' + winner : 'Next Player: ' + (xIsNext ? 'X' : 'O')} </p>
+            {draw ? <p>Draw</p> : <p>{winner ? 'Winner: ' + winner : 'Next Player: ' + (xIsNext ? 'X' : 'O')} </p> }
             {renderMoves()}
         </div>
         </div>
